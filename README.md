@@ -43,23 +43,27 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2008-39-18.png)
 
 cat < file2
 ## OUTPUT
 
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2008-44-40.png)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2008-46-30.png)
+
 comm file1 file2
  ## OUTPUT
 
- 
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2008-48-41.png)
+
 diff file1 file2
 ## OUTPUT
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2008-49-41.png)
 
 #Filters
 
@@ -82,18 +86,15 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2008-49-41.png)
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2008-58-48.png)
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2009-01-25.png)
 
 cat < newfile 
 ```
@@ -107,40 +108,31 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2020-34-40.png)
 
 grep hello newfile 
 ## OUTPUT
-
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2020-36-22.png)
 
 grep -v hello newfile 
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2020-37-54.png)
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2020-39-10.png)
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2020-40-16.png)
 
 grep -R ubuntu /etc
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2020-48-38.png)
 
 grep -w -n world newfile   
 ## OUTPUT
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2020-49-46.png)
 
 cat < newfile 
 ```
@@ -163,60 +155,52 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2020-51-39.png)
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2020-51-39.png)
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2021-08-29.png)
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2021-09-26.png)
 
 egrep '(world$)' newfile 
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2021-10-13.png)
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2021-57-21.png)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2021-58-13.png)
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2021-59-03.png)
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2022-01-13.png)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2022-01-13.png)
 
 egrep l{2} newfile
 ## OUTPUT
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2022-02-06.png)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2022-02-52.png)
 
 cat > file23
 ```
@@ -234,80 +218,68 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2022-04-01.png)
 
 sed -n -e '$p' file23
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2022-04-40.png)
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2022-05-26.png)
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2022-06-07.png)
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-22%2022-14-54.png)
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-00-08.png)
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-00-38.png)
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-01-00.png)
 
 seq 10 
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-01-21.png)
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-01-43.png)
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-02-07.png)
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-02-28.png)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-02-48.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-03-13.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-03-34.png)
 
 
 sed -n '2,4{s/$/*/;p}' file23
-
+## OUTPUT
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-05-09.png)
 
 #Sorting File content
 cat > file21
@@ -320,7 +292,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-05-09.png)
 
 cat > file22
 ```
@@ -333,13 +305,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-06-17.png)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-07-36.png)
 
 cat < urllist.txt
 ```
@@ -356,18 +329,16 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-08-14.png)
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-08-52.png)
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-11-26.png)
 
 mkdir backupdir
  
@@ -375,18 +346,17 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-12-02.png)
 
 tar -xvf backup.tar
 ## OUTPUT
 
-gzip backup.tar
-
-ls .gz
-## OUTPUT
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-12-02.png) 
  
+
 gunzip backup.tar.gz
 ## OUTPUT
+
 
  
 # Shell Script
@@ -396,8 +366,6 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 ```
 chmod 755 my-script.sh
 ./my-script.sh
-## OUTPUT
-
  
 cat << stop > herecheck.txt
 ```
@@ -410,6 +378,7 @@ stop
 cat herecheck.txt
 ## OUTPUT
 
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-23-28.png)
 
 cat < scriptest.sh 
 ```bash
@@ -448,24 +417,17 @@ chmod 777 scriptest.sh
 
 ## OUTPUT
 
- 
+!![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image.png)
 ls file1
 ## OUTPUT
 
-echo $?
-## OUTPUT 
-./one
-bash: ./one: Permission denied
- 
-echo $?
-## OUTPUT 
- 
-abcd
- 
-echo $?
- ## OUTPUT
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/images/Screenshot%20from%202024-08-24%2008-25-21.png) 
 
 
+echo $?
+## OUTPUT 
+
+./one bash: ./one: Permission denied
  
 # mis-using string comparisons
 
@@ -497,13 +459,14 @@ fi
 ```
 ##OUTPUT
 
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-1.png)
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
 
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-1.png)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -530,6 +493,8 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-1.png)
 
 # check if with file location
 cat>ifnested.sh 
@@ -577,7 +542,7 @@ fi
 ./ifnested.sh 
 ## OUTPUT
 
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-2.png)
 
 # using numeric test comparisons
 cat > iftest.sh 
@@ -619,7 +584,9 @@ fi
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
-##OUTPUT
+## OUTPUT
+
+![alt text](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-3.png)
 
 # check if a file
 cat > ifnested.sh 
@@ -668,7 +635,9 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
+## OUTPUT
+
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-4.png)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -698,6 +667,7 @@ $ chmod 755 elifcheck.sh
 $ ./elifcheck.sh 
 ## OUTPUT
 
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-5.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -713,6 +683,8 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-6.png)
 
 # using the case command
 cat >casecheck.sh 
@@ -731,8 +703,12 @@ esac
 ```
 $ chmod 755 casecheck.sh 
  
-$ ./casecheck.sh 
- 
+$ ./casecheck.sh
+
+## OUTPUT
+
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-7.png)
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -748,7 +724,8 @@ $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
  
- 
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-8.png)
+
 cat untiltest.sh 
 ```bash
 \#using the until command
@@ -760,8 +737,10 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
- 
- 
+
+## OUTPUT
+
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-9.png)
  
 cat forin1.sh 
 ```bash
@@ -774,8 +753,11 @@ done
  ```
  
 $ chmod 755 forin1.sh
- 
- 
+
+## OUTPUT
+
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-10.png)
+
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -787,6 +769,8 @@ done
  ```
  
 $ chmod 755 forin2.sh
+
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-11.png)
  
 cat forin2.sh 
 ```bash
@@ -800,6 +784,8 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
+
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-12.png)
  
 cat forin3.sh 
 ```bash
@@ -811,6 +797,8 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
+
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-13.png)
  
 cat forin1.sh 
 ```bash
@@ -846,6 +834,8 @@ Khammam
 
 ## OUTPUT
 
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-14.png)
+
 
 cat forctype.sh 
 ```bash
@@ -860,6 +850,8 @@ $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
 
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-15.png)
+
 cat forctype1.sh 
 ```bash
 #!/bin/bash
@@ -872,6 +864,8 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-17.png)
 
 cat fornested1.sh 
 ```bash
@@ -891,6 +885,7 @@ $ chmod 755 fornested1.sh
 $ ./fornested1.sh 
  ## OUTPUT
 
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-18.png)
  
 cat forbreak.sh 
 ```bash
@@ -907,6 +902,8 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
+
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-19.png)
 
 $ chmod 755 forbreak.sh
  
@@ -932,6 +929,8 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
+
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-20.png)
  
 cat exread.sh 
 ```bash
@@ -947,6 +946,7 @@ $ chmod 755 exread.sh
 $ ./exread.sh 
 ## OUTPUT
 
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-18.png)
 
  cat exread1.sh
 ```bash
@@ -959,7 +959,7 @@ $ chmod 755 exread1.sh
 
 ## OUTPUT
 
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-18.png)
 
 $ ./exread1.sh 
  
@@ -979,11 +979,8 @@ echo "Usage: badtest1 a b"
 fi
 ```
 ## OUTPUT
- ./funcex.sh 
 
- 
- ./funcex.sh 1 2
-
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-22.png)
  
 cat argshift.sh
 ```bash
@@ -994,6 +991,8 @@ cat argshift.sh
 done
 ```
 $ chmod 777 argshift.sh
+
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-23.png)
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
@@ -1026,10 +1025,12 @@ done
 set +x
 ```
 ## OUTPUT
- ./argshift.sh 1 2 3
- 
- 
+./argshift.sh 1 2 3 
+
 cat > nc.awk
+
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-26.png)
+
 ```bash
 BEGIN{}
 {
@@ -1058,6 +1059,8 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
+
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-25.png)
  
 cat > palindrome.sh
 ```bash
@@ -1086,6 +1089,7 @@ fi
 ```
 ## OUTPUT 
 
+![img](https://raw.githubusercontent.com/Nandakesore0210/OS-Linux-commands-Shell-script/main/image-24.png)
 
 # RESULT:
 The Commands are executed successfully.
